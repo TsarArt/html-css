@@ -1,0 +1,87 @@
+@mainWidth: 1180px;
+@specialBlueColor: #445161;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: @mainWidth;
+}
+header {
+    background-color: @specialBlueColor;
+    padding: 50px;
+    aside {
+        width: @mainWidth;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-side {
+            height: 222px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1 {
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #ffffff;
+                font-family: "Arial MT";
+                font-size: 60px;
+                font-weight: 400;
+            }
+            ul {
+                margin-left: 36px;
+                height: 127px;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #ffffff;
+                font-family: "Arial MT";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                li {
+                    list-style-image: url("img/check_icon.png");
+                }
+            }
+        }
+    }
+}
+main {
+    .preview {
+        margin: 0 auto;
+        width: @mainWidth;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            margin-bottom: 30px;
+            color: @specialBlueColor;
+            font-family: "Arial MT";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        p {
+            margin-top: 20px;
+            width: -webkit-columns-width;
+            width: 670px;
+            color: #333333;
+            font-family: "Arial MT";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    .advantages {
+        background-color: #f5f5f5;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        h1 {
+            color: @specialBlueColor;
+            font-family: "Arial MT";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+    }
+}
