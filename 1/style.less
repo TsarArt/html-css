@@ -62,8 +62,8 @@ main {
         }
         p {
             margin-top: 20px;
-            width: -webkit-columns-width;
             width: 670px;
+            // Не знаю как префиксами поправить для хрома и оперы, но значение ширины им будет 570px, сам делал на ff
             color: #333333;
             font-family: "Arial MT";
             font-size: 14px;
@@ -74,14 +74,139 @@ main {
     .advantages {
         background-color: #f5f5f5;
         padding: 50px 0;
-        display: flex;
-        justify-content: center;
+        h1 {
+            color: @specialBlueColor;
+            display: flex;
+            justify-content: center;
+            font-family: "Arial MT";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        section {
+            width: @mainWidth;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: wrap;
+            div {
+                margin-top: 30px;
+                width: 570px;
+                display: flex;
+                justify-content: left;
+                i {
+                    height: 22px;
+                    width: 22px;
+                    margin-top: 2px;
+                    padding: 7px;
+                    margin: 5px 9px 0 0;
+                    font-size: 20px;
+                    color: #ffffff;
+                    background-color: @specialBlueColor;
+                }
+                p {
+                    color: #333333;
+                    font-family: "Arial MT";
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .screenshots {
+        width: @mainWidth;
+        margin: 0 auto;
+        padding: 50px 0;
+        h1 {
+            font-family: "Arial MT";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+            color: @specialBlueColor;
+            text-align: center;
+        }
+        div {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            article {
+                display: flex;
+                width: 575px;
+                margin: 30px 0 15px;
+                figure {
+                    margin: 5px 15px 0;
+                }
+                div {
+                    h1 {
+                        height: 25px;
+                        font-family: "Arial MT";
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: @specialBlueColor;
+                    }
+                    p {
+                        font-family: "Arial MT";
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    .reviews {
+        background-color: #f5f5f5;
+        padding: 50px 0;
+        h1 {
+            color: @specialBlueColor;
+            display: flex;
+            justify-content: center;
+            font-family: "Arial MT";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        div {
+            width: @mainWidth;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            section {
+                width: 575px;
+            }
+        }
+    }
+    .buy-it-now {
+        padding: 50px 0;
+        margin: 0 auto;
+        width: @mainWidth;
+        float: bottom;
         h1 {
             color: @specialBlueColor;
             font-family: "Arial MT";
             font-size: 30px;
             font-weight: 400;
             line-height: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        div {
+            display: flex;
+            justify-content: space-around;
+            section {
+                background-color: @specialBlueColor;
+                width: 300px;
+                h1 {
+                    color: #ffffff;
+                    font-family: "Arial MT";
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
         }
     }
 }
