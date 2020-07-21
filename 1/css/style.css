@@ -1,5 +1,6 @@
 body {
   min-width: 1180px;
+  font-family: Arial;
 }
 header {
   background-color: #445161;
@@ -30,24 +31,28 @@ header aside .left-side {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header aside .left-side h1 {
+header aside .left-side span {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 60px;
   font-weight: 400;
+  margin: 0 0 20px 0;
 }
 header aside .left-side ul {
-  height: 127px;
+  min-height: 127px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+  margin: 0;
 }
 header aside .left-side ul li {
   list-style-image: url("../img/check_icon.png");
+}
+header aside img {
+  width: 469px;
+  height: 214px;
 }
 main .preview {
   margin: 0 auto;
@@ -60,31 +65,39 @@ main .preview {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-main .preview h1 {
-  margin-bottom: 30px;
+main .preview span {
+  margin: 0 0 30px 0;
   color: #445161;
-  font-family: "Arial MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
 }
-main .preview p {
-  margin-top: 20px;
+main .preview .left-side p {
+  margin: 0;
   width: 670px;
   color: #333333;
-  font-family: "Arial MT";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
-main .preview p:nth-child(2) {
-  margin: 0;
+main .preview .left-side p:nth-child(2) {
+  margin: 0 0 20px 0;
+}
+main .preview img {
+  width: 430px;
+  height: 245px;
 }
 main .advantages {
   background-color: #f5f5f5;
-  padding: 50px 0;
+  padding: 50px 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-main .advantages h1 {
+main .advantages details summary::-webkit-details-marker {
+  display: none;
+}
+main .advantages summary {
+  margin: 0 0 20px 0;
   color: #445161;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +105,6 @@ main .advantages h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Arial MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
@@ -107,7 +119,7 @@ main .advantages section {
       flex-flow: wrap;
 }
 main .advantages section div {
-  margin-top: 30px;
+  margin: 0 0 20px 0;
   width: 570px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,14 +132,14 @@ main .advantages section div i {
   height: 30px;
   width: 30px;
   padding: 6px;
-  margin: 20px 7px 0 0;
+  margin: 5px 7px 0 0;
   font-size: 30px;
   color: #ffffff;
   background-color: #445161;
 }
 main .advantages section div p {
+  margin: 0;
   color: #333333;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -135,15 +147,15 @@ main .advantages section div p {
 main .screenshots {
   width: 1180px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 30px;
 }
-main .screenshots h1 {
-  font-family: "Arial MT";
+main .screenshots span {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
   color: #445161;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 main .screenshots div {
   display: -webkit-box;
@@ -160,34 +172,32 @@ main .screenshots div article {
   display: -ms-flexbox;
   display: flex;
   width: 575px;
-  margin-top: 30px;
+  margin: 0 0 20px 0;
 }
-main .screenshots div article figure {
-  margin: 5px 15px 0;
+main .screenshots div article img {
+  margin: 0 15px 0 0;
+  width: 200px;
+  height: 150px;
 }
-main .screenshots div article .screenshots-description {
-  margin-top: -15px;
-}
-main .screenshots div article .screenshots-description h1 {
-  height: 25px;
-  font-family: "Arial MT";
+main .screenshots div article .screenshots-description span {
+  text-align: left;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
   color: #445161;
 }
 main .screenshots div article .screenshots-description p {
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #333333;
+  margin: 0;
 }
 main .reviews {
   background-color: #f5f5f5;
   padding: 50px 0 26px;
 }
-main .reviews h1 {
+main .reviews span {
   color: #445161;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,11 +205,10 @@ main .reviews h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Arial MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 35px;
+  margin: 0 0 20px 0;
 }
 main .reviews div {
   width: 1180px;
@@ -223,7 +232,7 @@ main .reviews div section {
 main .reviews div section img {
   height: 75px;
   width: 75px;
-  margin-right: 23px;
+  margin: 0 23px 0 0;
 }
 main .reviews div section div {
   padding: 16px 20px;
@@ -237,15 +246,13 @@ main .reviews div section div {
 }
 main .reviews div section div aside {
   width: 400px;
-  font-family: "Arial MT";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
 }
 main .reviews div section div p {
-  margin-top: 5px;
+  margin: 5px 0 0 0;
   color: #989898;
-  font-family: "Arial MT";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -264,13 +271,19 @@ main .buy-it-now {
   margin: 0 auto;
   width: 1180px;
 }
-main .buy-it-now h1 {
+main .buy-it-now span {
   color: #445161;
-  font-family: "Arial MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 20px 0;
 }
 main .buy-it-now #prices {
   display: -webkit-box;
@@ -278,7 +291,10 @@ main .buy-it-now #prices {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
 }
 main .buy-it-now #prices section {
   background-color: #445161;
@@ -292,13 +308,12 @@ main .buy-it-now #prices section {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-main .buy-it-now #prices section h1 {
+main .buy-it-now #prices section span {
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 24px;
   font-weight: 400;
   padding: 17px;
@@ -306,35 +321,38 @@ main .buy-it-now #prices section h1 {
           box-sizing: border-box;
   width: 100%;
   display: block;
+  margin: 0;
 }
 main .buy-it-now #prices section .price {
-  width: 85%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 18px;
   color: #445161;
   background-color: #fff;
-  font-family: "Arial MT";
   font-size: 40px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
 }
 main .buy-it-now #prices section ol {
-  margin-left: -70px;
   list-style-position: inside;
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 main .buy-it-now #prices section ol li {
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 main .buy-it-now #prices section .buy-btn {
-  margin: 20px 0;
+  margin: 20px auto;
   text-transform: uppercase;
   color: #445161;
-  font-family: "Arial MT";
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -342,13 +360,13 @@ main .buy-it-now #prices section .buy-btn {
   background-color: #fff;
   border-radius: 8px;
 }
-main .buy-it-now #prices section:first-child {
-  margin-top: 195px;
-  min-height: 340px;
+main .buy-it-now #prices section .buy-btn:hover {
+  background-color: #445161;
+  color: #ffffff;
 }
-main .buy-it-now #prices section:nth-child(2) {
-  margin-top: 95px;
-  min-height: 440px;
+main .buy-it-now #prices section .buy-btn:active {
+  -webkit-box-shadow: 0px 0px 10px 5px #878787;
+  box-shadow: 0px 0px 10px 5px #878787;
 }
 main .contacts {
   background-color: #445161;
@@ -364,13 +382,13 @@ main .contacts {
       -ms-flex-pack: center;
           justify-content: center;
 }
-main .contacts h1 {
+main .contacts span {
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 main .contacts .info {
   width: 785px;
@@ -395,11 +413,10 @@ main .contacts .info .left-side-con input {
   padding: 14px 10px;
   width: 478px;
   color: #445161;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 22px;
+  margin: 0 0 22px 0;
   border: 1px solid #445161;
   border-radius: 8px;
 }
@@ -411,7 +428,6 @@ main .contacts .info .left-side-con textarea {
   width: 476px;
   padding: 13px 10px;
   color: #445161;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -420,18 +436,30 @@ main .contacts .info .left-side-con textarea {
 main .contacts .info .left-side-con textarea:focus {
   color: #000000;
 }
-main .contacts .info .left-side-con button {
-  margin: 21px auto 0 180px;
+main .contacts .info .left-side-con a {
+  display: block;
+  text-decoration: none;
+  color: #445161;
+  margin: 21px auto 0 auto;
   background-color: #fff;
   outline: none;
   border: 1px solid #ffffff;
   border-radius: 8px;
   padding: 14px 48px;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+  width: 42px;
+}
+main .contacts .info .left-side-con a:hover {
+  background-color: #445161;
+  color: #ffffff;
+}
+main .contacts .info .left-side-con a:active {
+  -webkit-box-shadow: 0px 0px 10px 5px #878787;
+  box-shadow: 0px 0px 10px 5px #878787;
 }
 main .contacts .info .right-side-con {
   width: 250px;
@@ -470,15 +498,14 @@ main .contacts .info .right-side-con .contacts-info .our-info i {
   font-size: 30px;
 }
 main .contacts .info .right-side-con .contacts-info .our-info p {
-  margin-left: 5px;
+  margin: 0 0 0 5px;
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
 }
 main .contacts .info .right-side-con .logos {
-  margin-top: 30px;
+  margin: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
