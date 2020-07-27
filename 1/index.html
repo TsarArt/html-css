@@ -68,7 +68,7 @@
                 </details>
             </section>
             <section class="screenshots">
-                <span>Scrinshots</span>
+                <span class="screenshots-span">Scrinshots</span>
                 <div>
                     <article>
                         <img src="img/image.png" alt="#">
@@ -234,14 +234,20 @@
             <section class="contacts">
                 <span>Contacts</span>
                 <div class="info">
-                    <div class="left-side-con">
-                        <form action="#">
-                            <input type="name" placeholder="Your name:" name="fill-it">
-                            <input type="email" placeholder="Your email:" name="fill-it">
+                    <form action="#" method="POST">
+                        <div>
+                            <input type="name" placeholder="Your name:" name="fill-it" required>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your email:" name="fill-it" required>
+                        </div>
+                        <div>
                             <textarea name="fill-it" cols="30" rows="5" placeholder="Your message:"></textarea>
-                            <a href="#">send</a>
-                        </form>
-                    </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="send">
+                        </div>
+                    </form>
                     <div class="right-side-con">
                         <aside class="contacts-info">
                             <div class="our-info">
@@ -273,7 +279,7 @@
             </section>
     </main>
     <footer>
-        Copyright &copy; 2014 Product name - PSD HTML CSS
+        Copyright &copy; 2014 Product name - <a href="#">PSD HTML CSS</a>
     </footer>
 </body>
 </html>
