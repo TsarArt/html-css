@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "1170px": expected expression (e.g. 1px, bold), was ";"
+        on line 1 of /home/tsarart/Videos/html-css/2/sass/style.sass
+
+1: $mainWidth: 1170px;
+
+Backtrace:
+/home/tsarart/Videos/html-css/2/sass/style.sass:1
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:761:in `assert_done'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:69:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:783:in `parse_variable'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:651:in `parse_line'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/usr/share/koala/bin/sass:22:in `load'
+/usr/share/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"1170px\": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of /home/tsarart/Videos/html-css/2/sass/style.sass\A \A 1: $mainWidth: 1170px;"; }
