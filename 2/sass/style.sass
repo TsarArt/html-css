@@ -1,2 +1,60 @@
-$mainWidth: 1170px;
-
+@import "../fonts/stylesheet.css"
+$fontMontserrat: 'montserrat', sans-serif
+$fontRaleway: 'raleway', sans-serif
+$fontRoboto: "roboto", sans-serif
+$mainWidth: 1170px
+header
+    width: 100%
+    background-image: url("../img/photo.png")
+    background-repeat: no-repeat
+    background-position: center
+.header
+    background-color: rgba(0, 0, 0, .6)
+    height: 1024px
+.header-top
+    margin: 0 auto
+    width: $mainWidth
+    padding: 40px 0 0 0
+    display: flex
+    justify-content: space-between
+.logo
+    text-decoration: none
+    display: flex
+    align-items: center
+    .logo-img
+        fill: #ffffff
+    .logo-text
+        color: #ffffff
+        font-family: $fontRaleway
+        font-size: 34px
+        font-weight: 400
+        /* Text style for "Waxom" */
+        letter-spacing: -1.36px
+.logo:hover
+    .logo-img
+        fill: #c7b299
+    .logo-text
+        color: #c7b299
+.nav-cart-search
+    width: 770px
+    height: 24px
+    .nav-list
+        ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 637px
+            height: 40px
+            li
+                list-style: none
+                .nav-item
+                    text-decoration: none
+                    color: #ffffff
+                    font-family: $fontMontserrat
+                    font-size: 14px
+                    font-weight: 300
+                    text-transform: capitalize
+                    display: block
+                    padding: 12px
+                .nav-item:hover
+                    color: #c7b299

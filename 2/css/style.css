@@ -1,36 +1,75 @@
-/*
-Error: Invalid CSS after "1170px": expected expression (e.g. 1px, bold), was ";"
-        on line 1 of /home/tsarart/Videos/html-css/2/sass/style.sass
+@import url(../fonts/stylesheet.css);
+header {
+  width: 100%;
+  background-image: url("../img/photo.png");
+  background-repeat: no-repeat;
+  background-position: center; }
 
-1: $mainWidth: 1170px;
+.header {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 1024px; }
 
-Backtrace:
-/home/tsarart/Videos/html-css/2/sass/style.sass:1
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:761:in `assert_done'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:69:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:783:in `parse_variable'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:651:in `parse_line'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:22:in `load'
-/usr/share/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"1170px\": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of /home/tsarart/Videos/html-css/2/sass/style.sass\A \A 1: $mainWidth: 1170px;"; }
+.header-top {
+  margin: 0 auto;
+  width: 1170px;
+  padding: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .logo .logo-img {
+    fill: #ffffff; }
+  .logo .logo-text {
+    color: #ffffff;
+    font-family: "raleway", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    /* Text style for "Waxom" */
+    letter-spacing: -1.36px; }
+
+.logo:hover .logo-img {
+  fill: #c7b299; }
+.logo:hover .logo-text {
+  color: #c7b299; }
+
+.nav-cart-search {
+  width: 770px;
+  height: 24px; }
+  .nav-cart-search .nav-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 637px;
+    height: 40px; }
+    .nav-cart-search .nav-list ul li {
+      list-style: none; }
+      .nav-cart-search .nav-list ul li .nav-item {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: capitalize;
+        display: block;
+        padding: 12px; }
+      .nav-cart-search .nav-list ul li .nav-item:hover {
+        color: #c7b299; }
+
+/*# sourceMappingURL=style.css.map */
