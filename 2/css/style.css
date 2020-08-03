@@ -46,30 +46,36 @@ header {
 .nav-cart-search {
   width: 770px;
   height: 24px; }
-  .nav-cart-search .nav-list ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 637px;
-    height: 40px; }
-    .nav-cart-search .nav-list ul li {
-      list-style: none; }
-      .nav-cart-search .nav-list ul li .nav-item {
-        text-decoration: none;
-        color: #ffffff;
-        font-family: "montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        text-transform: capitalize;
-        display: block;
-        padding: 12px; }
-      .nav-cart-search .nav-list ul li .nav-item:hover {
-        color: #c7b299; }
+  .nav-cart-search .nav-list {
+    width: 637px; }
+    .nav-cart-search .nav-list ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 40px; }
+      .nav-cart-search .nav-list ul li {
+        list-style: none; }
+        .nav-cart-search .nav-list ul li .nav-item {
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "montserrat", sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          text-transform: capitalize;
+          display: block;
+          padding: 12px 0 12px 0; }
+        .nav-cart-search .nav-list ul li .nav-item:hover {
+          color: #c7b299; }
+  .nav-cart-search .cart-btn {
+    background: none;
+    outline: none; }
+    .nav-cart-search .cart-btn svg {
+      fill: #fff; }
 
 /*# sourceMappingURL=style.css.map */
