@@ -24,6 +24,8 @@ header
 .logo-img
     fill: #ffffff
     transition: .3s
+    width: 64px
+    height: 56px
 .logo-text
     display: flex
     align-items: center
@@ -79,6 +81,8 @@ header
     align-items: center
     svg
         fill: #fff
+        width: 18px
+        height: 24px
 .header-search
     display: flex
     align-items: center
@@ -158,6 +162,7 @@ header
     font-weight: 800
     line-height: 23px
     text-transform: uppercase
+    text-align: center
 .btn-a:active
     background-color: #736357
 .header-arrow
@@ -165,6 +170,8 @@ header
     border: none
     fill: #fff
     transition: .3s
+    width: 40px
+    height: 73px
 .header-arrow:hover
     fill: #998675
     transition: .3s
@@ -205,6 +212,8 @@ header
 .main-waxom-realization-your-ideas-top-part-item-svg
     fill: #555555
     transition: .3s
+    width: 50px
+    height: 50px
 .main-waxom-realization-your-ideas-top-part-item-span
     color: #555555
     font-family: $fontRaleway
@@ -324,14 +333,13 @@ header
     font-size: 16px
     font-weight: 300
     line-height: 28px
-.main-our-latest-projects-ul
+.main-our-latest-projects-div
     width: 605px
     display: flex
     justify-content: space-between
     padding: 0
-.main-our-latest-projects-ul-li
-    list-style-type: none
-.main-our-latest-projects-ul-li-btn
+    margin: 0 0 40px 0
+.main-our-latest-projects-div-btn
     color: #8c8c8c
     font-family: $fontMontserrat
     font-size: 14px
@@ -343,7 +351,7 @@ header
     border: 1px solid #ebebeb
     transition: .3s
     background: none
-.main-our-latest-projects-ul-li-btn:hover
+.main-our-latest-projects-div-btn:hover
     color: #fff
     background-color: #998675
     transition: .3s
@@ -359,6 +367,7 @@ header
     height: 337px
     display: flex
     flex-flow: column
+    position: relative
 .main-our-latest-projects-items-item-txt
     display: flex
     flex-flow: column
@@ -374,8 +383,47 @@ header
     border: 15px solid transparent
     border-bottom: 10px solid #fbfaf8
     position: absolute
+    z-index: 1
     top: -25px
     left: 19px
+.main-our-latest-projects-items-item-hidden
+    display: none
+    position: absolute
+    .main-our-latest-projects-items-item-hidden-links
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 370px
+        height: 237px
+        background-color: rgba(0, 0, 0, .6)
+        button
+            border: none
+            background: none
+    .main-our-latest-projects-items-item-hidden-links-link:hover
+        fill: #C7B299
+.main-our-latest-projects-items-item-hidden-links-link
+    width: 26px
+    height: 26px
+    fill: #fff
+.main-our-latest-projects-items-item-hidden-links-link:first-child
+    margin: 0 15px 0 0
+.main-our-latest-projects-items-item:hover .main-our-latest-projects-items-item-hidden
+    display: block
+.main-our-latest-projects-items-item:hover
+    .main-our-latest-projects-items-item-txt
+        background-color: #362F2D
+    .main-our-latest-projects-items-item-txt:before
+        content: ""
+        border: 15px solid transparent
+        border-bottom: 10px solid #362f20
+        position: absolute
+        z-index: 1
+        top: -25px
+        left: 19px
+    .main-our-latest-projects-items-item-txt-h1
+        color: #ffffff
+    .main-our-latest-projects-items-item-txt-span
+        color: #C7B299
 .main-our-latest-projects-items-item-txt-h1
     padding: 0
     margin: 0
@@ -383,7 +431,7 @@ header
     font-family: $fontRaleway
     font-size: 20px
     font-weight: 500
-.main-our-latest-projects-items-item-txt-p
+.main-our-latest-projects-items-item-txt-span
     padding: 0
     margin: 0
     color: #d1d1d1
@@ -431,20 +479,20 @@ header
     display: flex
     justify-content: space-around
     align-items: center
-.main-some-info-figure
+.main-some-info-div
     display: flex
     flex-flow: column
     align-items: center
-.main-some-info-figure:after
+.main-some-info-div:after
     content: ""
     display: block
     width: 30px
     height: 2px
     background-color: #fff
     margin: 30px 0 0 0
-.main-some-info-figure-img
+.main-some-info-div-img
     margin: 0 0 30px 0
-.main-some-info-figure-figcaption
+.main-some-info-div-span
     color: #ffffff
     font-family: $fontMontserrat
     font-size: 48px
@@ -454,8 +502,9 @@ header
     flex-flow: column
     justify-content: space-between
     align-items: center
-.main-some-info-figure-figcaption-span
+.main-some-info-div-span1
     color: #c7b299
+    font-family: $fontMontserrat
     font-size: 14px
     font-weight: 300
     line-height: 20px
@@ -504,6 +553,12 @@ header
     flex-flow: column
     justify-content: space-between
     border: 1px solid #f8f8f8
+.main-recent-posts-post-article:hover
+    background-color: #000
+    .date-span
+        background-color: #c7b299
+    .month-span
+        background-color: #A48D72
 .main-recent-posts-post-article-img
     position: relative
 .published-date
@@ -549,8 +604,8 @@ header
     justify-content: space-between
     width: 52px
 .main-recent-posts-buttons-button
-    width: 30px
-    height: 30px
+    width: 22px
+    height: 22px
     padding: 0
     border: none
     background: transparent
@@ -564,7 +619,7 @@ header
     background-repeat: no-repeat
     background-position: center
 .top-footer-bgc
-    background-color: rgba(0, 0, 0, .6)
+    background-color: rgba(0, 0, 0, .7)
 .top-footer
     padding: 140px 0 139px 0
     width: $mainWidth
@@ -603,6 +658,9 @@ header
     justify-content: space-between
     align-items: center
     text-decoration: none
+.read-more-arrow
+    width: 5px
+    height: 8px
 .read-more-span
     text-transform: capitalize
     font-family: $fontMontserrat
@@ -635,7 +693,7 @@ header
     flex-flow: column
     justify-content: space-between
 .medium-footer-recent-posts-posts-post:hover
-    .medium-footer-recent-posts-posts-post-span
+    .medium-footer-recent-posts-posts-post-time
         color: #ffffff
     .medium-footer-recent-posts-posts-post-p
         color: #c7b299
@@ -647,7 +705,7 @@ header
     width: 100%
     height: 1px
     background-color: #111
-.medium-footer-recent-posts-posts-post-span
+.medium-footer-recent-posts-posts-post-time
     color: #363636
     font-family: $fontMontserrat
     font-size: 12px
